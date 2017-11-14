@@ -6,8 +6,7 @@ use Composer\Autoload\ClassLoader;
 /**
  * @var ClassLoader $loader
  */
-//$loader = require __DIR__.'/../vendor/autoload.php';
-$loader = require '/var/www/vhosts/localhost.localdomain/httpdocs/Apps/symfonyapp/vendor/autoload.php';
+$loader = require __DIR__.'/../vendor/autoload.php';
 
 AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
 
