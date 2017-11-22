@@ -1,0 +1,11 @@
+{% if app.user %}
+    Welcome, {{ app.user.username }}!<br/>
+    {{ dump(app.user) }}
+    <a href="{{ url('secured') }}">Protected route</a>
+    <a href="{{ logout_url("secured_area") }}">
+        <button>Logout</button>
+    </a>
+{% else %}
+    <h1>Symfony Auth0 Quickstart</h1>
+    <a href="/connect/auth0"><button>Login</button></a>
+{% endif %}

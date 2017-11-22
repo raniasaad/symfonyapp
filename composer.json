@@ -15,19 +15,18 @@
     "require": {
         "php": ">=5.3.9",
         "doctrine/doctrine-bundle": "~1.4",
+        "doctrine/doctrine-fixtures-bundle": "~2.2",
         "doctrine/orm": "^2.4.8",
+        "hwi/oauth-bundle": "^0.5.3",
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
+        "stof/doctrine-extensions-bundle": "~1.1",
         "symfony/assetic-bundle": "~2.3",
         "symfony/monolog-bundle": "^3.0.2",
         "symfony/swiftmailer-bundle": "~2.3,>=2.3.10",
         "symfony/symfony": "2.7.*",
-        "twig/twig": "^1.0||^2.0" ,
-        "doctrine/doctrine-fixtures-bundle": "~2.2",
-        "stof/doctrine-extensions-bundle": "~1.1"
-
-
+        "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",

@@ -1,0 +1,10 @@
+services:
+    oc_platform.antispam:
+        class:     OC\PlateformBundle\Antispam\OCAntispam
+        arguments: [@mailer, %locale%, 50]
+
+    oc_platform.doctrine.notification:
+        class: OC\PlateformBundle\DoctrineListener\ApplicationNotification
+        arguments: [@mailer]
+        tags:
+            - { name: doctrine.event_listener, event: postPersist }

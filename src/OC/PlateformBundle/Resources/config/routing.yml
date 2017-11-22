@@ -8,6 +8,8 @@ oc_platform_home:
     requirements:
         page: \d*
 
+
+
 oc_platform_view:
     path:      /advert/{id}
     defaults:  { _controller: OCPlateformBundle:Advert:view }
@@ -29,3 +31,5 @@ oc_platform_delete:
     defaults:  { _controller: OCPlateformBundle:Advert:delete }
     requirements:
         id: \d+
+        
+  

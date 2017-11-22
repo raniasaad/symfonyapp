@@ -55,6 +55,7 @@ class AdvertController extends Controller
     }
 
 
+    
     public function indexAction($page)
     {
         if ($page < 1) {
@@ -213,7 +214,16 @@ class AdvertController extends Controller
     }
 
 
-
+ /**
+     * @Route("/login", name="homepage")
+     */
+     public function loginAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/login.html.twig', array(
+            'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
+        ));
+    }
 
 
 
